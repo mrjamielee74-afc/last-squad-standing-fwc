@@ -1,8 +1,8 @@
 # ⚽ Last Squad Standing — World Cup 2026 Sweepstake
 
-A live, phone-friendly leaderboard for a 24-player friends-and-family World Cup 2026
-sweepstake. Each player owns **2 countries**; you stay **alive** while one of them is
-still in, and you're **out** when both are gone. Everyone is ranked on **Survival Points**
+A live, phone-friendly leaderboard for a 16-player friends-and-family World Cup 2026
+sweepstake. Each player owns **3 countries**; you stay **alive** while one of them is
+still in, and you're **out** when all three are gone. Everyone is ranked on **Survival Points**
 from champion 🏆 down to the wooden spoon 🥄.
 
 It updates itself — a scheduled robot re-checks the scores every 15 minutes and
@@ -44,4 +44,4 @@ See [SPEC.md](SPEC.md) for the full design.
 
 ## The draw
 
-24 players, 2 teams each — defined in [`public/config.mjs`](public/config.mjs).
+16 players, 3 teams each — defined in [`public/config.mjs`](public/config.mjs).

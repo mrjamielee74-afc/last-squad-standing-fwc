@@ -18,7 +18,7 @@ export const DRAW = {
   "Summer":     ["Curaçao", "Netherlands", "Uzbekistan"],
   "Ralph":      ["Germany", "Korea Republic", "Austria"],
   "Ellie":      ["Morocco", "England", "Ghana"],
-  "Mum":        ["Sweden", "Colombia", "United States"],
+  "Mandy":        ["Sweden", "Colombia", "United States"],
   "Tom":        ["Bosnia and Herzegovina", "Haiti", "Saudi Arabia"],
   "Lauren Fl":  ["Qatar", "Canada", "Mexico"],
   "Jack":       ["Türkiye", "Czechia", "Australia"],

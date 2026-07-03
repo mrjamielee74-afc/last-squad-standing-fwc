@@ -33,7 +33,7 @@ jobs:
       - name: Fetch latest scores
         run: node scripts/fetch.mjs
       - uses: actions/configure-pages@v4
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: public
       - name: Deploy to GitHub Pages

@@ -133,7 +133,7 @@ function openPlayer(p) {
   const meta = el("div", "m-meta");
   meta.append(el("div", "m-pill", `Rank <b>#${p.rank}</b>${p.woodenSpoon ? " 🥄" : ""}`));
   meta.append(el("div", "m-pill", `<b>${p.points}</b> pts`));
-  meta.append(el("div", "m-pill", p.alive ? `🟢 Alive · ${p.teamsRemaining}/2` : "💀 Knocked out"));
+  meta.append(el("div", "m-pill", p.alive ? `🟢 Alive · ${p.teamsRemaining}/3` : "❌ Knocked out"));
   meta.append(el("div", "m-pill", `Furthest <b>${stageLabel(p.furthest)}</b>`));
   card.append(meta);
 

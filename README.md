@@ -1,8 +1,8 @@
 # ⚽ Last Squad Standing — World Cup 2026 Sweepstake
 
 A live, phone-friendly leaderboard for a 16-player friends-and-family World Cup 2026
-sweepstake. Each player owns **3 countries**; you stay **alive** while one of them is
-still in, and you're **out** when all three are gone. Everyone is ranked on **Survival Points**
+sweepstake. Each player owns **3 countries**; you stay **in** while one of them is
+still in the world cup, and you're **out** when all three are gone. Everyone is ranked on **Survival Points**
 from champion 🏆 down to the wooden spoon 🥄.
 
 It updates itself — a scheduled robot re-checks the scores every 15 minutes and

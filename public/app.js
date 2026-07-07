@@ -91,7 +91,7 @@ function renderBoard() {
 
     const score = el("div", "score-col");
     score.append(el("div", "pts", `${p.points}<span>PTS</span>`));
-    score.append(el("div", "badge " + (p.alive ? "alive" : "out"), p.alive ? "Alive" : "Out"));
+    score.append(el("div", "badge " + (p.alive ? "In" : "out"), p.alive ? "In" : "Out"));
     if (p.todayPts > 0) score.append(el("div", "today", "+" + p.todayPts + " today"));
 
     card.append(rank, who, score);
@@ -102,7 +102,7 @@ function teamPill(t) {
   const pill = el("span", "team " + (t.alive ? "" : "dead"));
   const flag = t.logo ? `<img class="flag" src="${esc(t.logo)}" alt="" loading="lazy">` : `<span class="flag"></span>`;
   const rec = `<span class="mono">${t.W}-${t.D}-${t.L}</span>`;
-  const dead = t.alive ? "" : `<span class="skull">💀</span>`;
+  const dead = t.alive ? "" : `<span class="skull">❌</span>`;
   pill.innerHTML = `${flag}${esc(t.country)} ${rec}${dead}`;
   return pill;
 }
@@ -133,7 +133,7 @@ function openPlayer(p) {
   const meta = el("div", "m-meta");
   meta.append(el("div", "m-pill", `Rank <b>#${p.rank}</b>${p.woodenSpoon ? " 🥄" : ""}`));
   meta.append(el("div", "m-pill", `<b>${p.points}</b> pts`));
-  meta.append(el("div", "m-pill", p.alive ? `🟢 Alive · ${p.teamsRemaining}/3` : "❌ Knocked out"));
+  meta.append(el("div", "m-pill", p.alive ? `🟢 In · ${p.teamsRemaining}/3` : "❌ Knocked out"));
   meta.append(el("div", "m-pill", `Furthest <b>${stageLabel(p.furthest)}</b>`));
   card.append(meta);
 
@@ -148,7 +148,7 @@ function teamBlock(t) {
   head.innerHTML =
     (t.logo ? `<img src="${esc(t.logo)}" alt="">` : "") +
     `<span class="nm">${esc(t.country)}</span>` +
-    (t.alive ? `<span class="st live-ok">IN</span>` : `<span class="st" style="background:#2a3658;color:#9aa3bd">OUT 💀</span>`) +
+    (t.alive ? `<span class="st live-ok">IN</span>` : `<span class="st" style="background:#2a3658;color:#9aa3bd">OUT ❌</span>`) +
     `<span class="pp">${t.points} pts</span>`;
   wrap.append(head);
 
